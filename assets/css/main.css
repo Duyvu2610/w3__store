@@ -1,0 +1,219 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+}
+.header {
+  overflow-y: auto;
+  height: 99.9%;
+}
+.form-field {
+  position: relative;
+  margin: 20px 0;
+}
+.form-label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 21px;
+  user-select: none;
+  font-size: 10px !important;
+  color: #999;
+  pointer-events: none;
+  transition: 0.25s ease;
+}
+.form-input {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  transition: 0.25s ease;
+  width: 100%;
+  padding: 0 20px;
+  outline: none;
+  height: 50px;
+}
+.form-input:not(:placeholder-shown) + .form-label,
+.form-input:focus + .form-label {
+  padding: 10px;
+  top: 0;
+  left: 11px;
+  display: inline-block;
+  background-color: #fff;
+  color: #6a5af9;
+}
+.form-input:focus {
+  border-color: #6a5af9;
+}
+.logo {
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 24px;
+  letter-spacing: 4px;
+}
+.logo h3 {
+  font-weight: 500;
+}
+.nav {
+  padding: 64px 0;
+}
+.item-item a {
+  display: block;
+  text-decoration: none;
+  padding: 8px 16px;
+  color: #797575;
+  font-weight: 700;
+  font-size: 18px;
+}
+.item-item a:hover {
+  background-color: #f1f1f1;
+  color: #000;
+}
+.item-item,
+.more-item {
+  list-style-type: none;
+}
+.more-list {
+  padding: 0 24px;
+  display: none;
+}
+.info p {
+  padding: 20px 16px;
+}
+.title {
+  display: flex;
+  font-size: 24px;
+  justify-content: space-between;
+}
+.title p {
+  font-family: "Montserrat", sans-serif !important;
+}
+.icon i {
+  margin: 0 8px;
+}
+.title-image {
+  background-image: url(../image/jeans.jpg);
+  padding-top: 67%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+.title-image .about {
+  color: #fff;
+  font-weight: 400;
+  position: absolute;
+  padding: 24px 48px;
+  top: 0;
+  left: 0;
+}
+.title-image h1:first-child {
+  font-size: 64px;
+  font-weight: 400;
+}
+.title-image h1:nth-child(2) {
+  font-weight: 400;
+  font-size: 36px;
+}
+.about a {
+  color: #fff;
+  background-color: #000;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+  padding: 12px;
+}
+.jean-item img {
+  width: 100%;
+  filter: grayscale(80%);
+}
+.jean-item p {
+  font-size: 15px;
+}
+.jean-item p:last-child {
+  font-weight: bold;
+}
+.user-info {
+  background-color: #000;
+  color: #fff;
+  padding: 36px 0;
+  margin-top: 16px;
+}
+.user-info h1 {
+  font-size: 36px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+.user-info p {
+  margin: 15px 0;
+}
+.user-info a {
+  display: inline-block;
+  padding: 10px;
+  background-color: #f44336;
+  text-decoration: none;
+  color: #fff;
+  margin: 12px 0;
+}
+/* .user-info input {
+  width: 100%;
+  padding: 10px;
+} */
+.contact {
+  padding: 64px 0;
+  text-align: center;
+}
+.contact-info a {
+  padding: 8px 0;
+  margin: 8px 0;
+  border-radius: 4px;
+}
+.contact-info a {
+  display: block;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.title-main {
+  font-size: 20px;
+}
+.normal-main {
+  font-size: 12px;
+}
+.contact-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact-about a {
+  color: #000;
+  display: block;
+  margin: 8px 0;
+}
+.contact-myinfo {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.contact-myinfo i {
+  width: 20px;
+}
+.social i {
+  color: #000;
+  font-size: 20px !important;
+  margin: 0 4px;
+}
+footer {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  padding: 24px 0;
+  text-align: center;
+}
+footer a {
+  color: #fff;
+}
